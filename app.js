@@ -2,7 +2,7 @@ const _networks = require('./networks');
 const networks = _networks.networks;
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 80;
 const axios = require('axios');
 var uuid = require('uuid');
 var bodyParser = require('body-parser')
@@ -226,4 +226,4 @@ app.post('/delete', async(req,res)=>{
 });
 
 
-app.listen(port, () => console.log(`listening on port ${port}!`))
+app.listen(port)
