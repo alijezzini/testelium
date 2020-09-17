@@ -227,7 +227,7 @@ app.post('/delete', async(req,res)=>{
 
 app.get('/',(req,res)=>{
     
-    res.send('API built by MM NOC team in order to schedule a test for a route, using testelium');
+    res.send('<h1>API built by MM NOC team in order to schedule a test for a route, using testelium</h1>');
     
 });
 app.listen(port, () => console.log(`listening on port ${port}!`))
