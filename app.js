@@ -231,6 +231,6 @@ app.get('/',(req,res)=>{
     
 });
 app.get('*', function(req, res){
-  res.send('<h1>404 Not Found</h1>', 404);
+  res.send('<h1>404 Page Not Found</h1>', 404);
 });
 app.listen(port, () => console.log(`listening on port ${port}!`))
