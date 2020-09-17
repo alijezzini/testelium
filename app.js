@@ -230,4 +230,7 @@ app.get('/',(req,res)=>{
     res.send('<h1>API built by MM NOC team in order to schedule a test for a route, using testelium</h1>');
     
 });
+app.get('*', function(req, res){
+  res.send('not found', 404);
+});
 app.listen(port, () => console.log(`listening on port ${port}!`))
